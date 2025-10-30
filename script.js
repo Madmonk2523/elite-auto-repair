@@ -19,7 +19,6 @@ function initializeWebsite() {
     initializeMobileMenu();
     initializeAdvancedAnimations();
     initializeParallaxEffects();
-    initializeCustomCursor();
     initializeIntersectionObservers();
     initializeCounterAnimations();
     initializeAdvancedInteractions();

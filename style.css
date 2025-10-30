@@ -266,6 +266,7 @@ body {
   z-index: 2;
 }
 
+
 .nav-logo {
   display: flex;
   align-items: center;
@@ -277,38 +278,46 @@ body {
   text-decoration: none;
   transition: var(--transition-spring);
   position: relative;
+  padding: 0.5rem 1.5rem;
+  z-index: 2;
 }
+
 
 
 .nav-logo::before {
   content: '';
   position: absolute;
-  top: -12px;
-  left: -12px;
-  right: -12px;
-  bottom: -12px;
+  top: -16px;
+  left: -16px;
+  right: -16px;
+  bottom: -16px;
   background: radial-gradient(circle at center, var(--primary-red-glow), transparent 70%);
-  opacity: 0.25;
+  opacity: 0.18;
   transition: opacity 0.25s cubic-bezier(0.4,0,0.2,1);
   border-radius: var(--radius-2xl);
-  z-index: -1;
+  z-index: 0;
   pointer-events: none;
 }
 
-.nav-logo:hover::before {
-  opacity: 0.7;
+
+.nav-logo:hover::before,
+.nav-logo:focus::before,
+.nav-logo:active::before {
+  opacity: 0.5;
 }
+
 
 .nav-logo i {
   color: var(--primary-red);
   font-size: 2rem;
   animation: float 6s ease-in-out infinite;
   filter: drop-shadow(0 0 10px var(--primary-red-glow));
-  transition: var(--transition-spring);
+  transition: filter 0.25s cubic-bezier(0.4,0,0.2,1);
 }
 
-.nav-logo:hover i {
-  transform: scale(1.1) rotate(15deg);
+.nav-logo:hover i,
+.nav-logo:focus i,
+.nav-logo:active i {
   filter: drop-shadow(0 0 20px var(--primary-red-glow));
 }
 

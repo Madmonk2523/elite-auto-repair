@@ -333,67 +333,69 @@
   <!-- Contact Section -->
   <section id="contact" class="contact">
     <div class="container">
+    <div class="container">
+      <div class="section-header" style="text-align:center; margin-bottom:2.5rem;">
+        <h2 style="font-size:2.3rem; margin-bottom:0.5rem;">Let's Build Your Website</h2>
+        <p style="font-size:1.15rem; color:var(--text-medium-gray);">Ready to get your business online? Send me a message and I'll get back to you quickly.</p>
+      </div>
       <div class="contact-content">
         <div class="contact-info">
-          <span class="section-subtitle">Get In Touch</span>
-          <h2 class="section-title">Ready to Experience Excellence?</h2>
-          <p>Contact us today to schedule your service appointment or get a free estimate.</p>
-          
-          <div class="contact-details">
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="fas fa-map-marker-alt"></i>
-              </div>
-              <div class="contact-content">
-                <h4>Visit Our Shop</h4>
-                <p>24 Walt Whitman Rd<br>Melville, NY 11747</p>
-              </div>
+          <h3 style="margin-bottom:1.5rem; color:var(--primary-red); font-size:1.3rem;">Contact Details</h3>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
             </div>
-            
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="fas fa-phone"></i>
-              </div>
-              <div class="contact-content">
-                <h4>Call Us Today</h4>
-                <p><a href="tel:6315550923">(631) 555-0923</a></p>
-              </div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:chasemallor@gmail.com">chasemallor@gmail.com</a>
             </div>
-            
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="fas fa-envelope"></i>
-              </div>
-              <div class="contact-content">
-                <h4>Email Us</h4>
-                <p><a href="mailto:contact@eliteautorepair.com">contact@eliteautorepair.com</a></p>
-              </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
             </div>
-            
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="fas fa-clock"></i>
-              </div>
-              <div class="contact-content">
-                <h4>Business Hours</h4>
-                <p>Mon-Fri: 7:30 AM - 6:00 PM<br>Saturday: 8:00 AM - 4:00 PM<br>Sunday: Closed</p>
-              </div>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:+16469890274">(646) 989-0274</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div>
+              <h4>Hours</h4>
+              <p style="color:var(--text-medium-gray);">Mon–Fri: 9am–6pm<br>Sat: 10am–2pm</p>
             </div>
           </div>
         </div>
-        
-        <div class="contact-form">
-          <form id="contactForm" class="form">
-            <h3>Request Service Appointment</h3>
-            <div class="form-group">
-              <input type="text" id="name" name="name" required>
-              <label for="name">Full Name</label>
-            </div>
-            <div class="form-group">
-              <input type="email" id="email" name="email" required>
-              <label for="email">Email Address</label>
-            </div>
-            <div class="form-group">
+        <form class="contact-form" id="contactForm">
+          <h3 style="margin-bottom:1.2rem; color:var(--primary-red); font-size:1.2rem;">Send a Message</h3>
+          <div class="form-group">
+            <input type="text" name="name" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" id="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <input type="text" name="business" id="business" placeholder="Business Name">
+          </div>
+          <div class="form-group">
+            <select name="service" id="service" required>
+              <option value="">Select a Service</option>
+              <option value="basic">Basic Package ($150)</option>
+              <option value="standard">Standard Package ($250)</option>
+              <option value="premium">Premium Package ($400)</option>
+              <option value="custom">Custom Solution</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea name="message" id="message" placeholder="Tell us about your project..." rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
               <input type="tel" id="phone" name="phone" required>
               <label for="phone">Phone Number</label>
             </div>

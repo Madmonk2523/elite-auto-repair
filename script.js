@@ -237,17 +237,19 @@ function initializeCustomCursor() {
         mouseX = e.clientX;
         mouseY = e.clientY;
         
-        cursor.style.left = mouseX + 'px';
-        cursor.style.top = mouseY + 'px';
+        // Center the cursor precisely on mouse position
+        cursor.style.left = (mouseX - 5) + 'px';
+        cursor.style.top = (mouseY - 5) + 'px';
     });
     
-    // Smooth follower animation
+    // Smooth follower animation with better accuracy
     function animateFollower() {
-        followerX += (mouseX - followerX) * 0.1;
-        followerY += (mouseY - followerY) * 0.1;
+        followerX += (mouseX - followerX) * 0.15;
+        followerY += (mouseY - followerY) * 0.15;
         
-        cursorFollower.style.left = followerX + 'px';
-        cursorFollower.style.top = followerY + 'px';
+        // Center the follower on mouse position
+        cursorFollower.style.left = (followerX - 15) + 'px';
+        cursorFollower.style.top = (followerY - 15) + 'px';
         
         requestAnimationFrame(animateFollower);
     }

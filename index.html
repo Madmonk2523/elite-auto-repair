@@ -22,25 +22,15 @@
   </div>
 
   <!-- Navigation -->
-  <nav class="navbar" id="navbar">
+  <nav class="navbar amazing-navbar">
     <div class="nav-container">
-      <div class="nav-logo">
-        <i class="fas fa-cog"></i>
-        <span>Elite Auto Repair</span>
-      </div>
-      <ul class="nav-menu" id="nav-menu">
-        <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#services" class="nav-link">Services</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-        <li><a href="#" class="nav-link cta-button" onclick="openBookingModal()">Book Now</a></li>
+      <div class="nav-logo">WebLaunchServices</div>
+      <ul class="nav-menu">
+        <li><a class="nav-link" href="#hero">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#services">Services</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
-      <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
     </div>
   </nav>
 
@@ -331,46 +321,39 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="container">
+  <section id="contact" class="contact amazing-contact">
     <div class="container">
       <div class="section-header" style="text-align:center; margin-bottom:2.5rem;">
-        <h2 style="font-size:2.3rem; margin-bottom:0.5rem;">Let's Build Your Website</h2>
-        <p style="font-size:1.15rem; color:var(--text-medium-gray);">Ready to get your business online? Send me a message and I'll get back to you quickly.</p>
+        <h2 style="font-size:2.7rem; margin-bottom:0.5rem; font-weight:900; color:#23283b; letter-spacing:-1px;">Contact WebLaunchServices</h2>
+        <p style="font-size:1.18rem; color:#6b7280;">Let's get your business online. Reach out and I'll respond quickly!</p>
       </div>
-      <div class="contact-content">
-        <div class="contact-info">
-          <h3 style="margin-bottom:1.5rem; color:var(--primary-red); font-size:1.3rem;">Contact Details</h3>
+      <div class="contact-content amazing-contact-content">
+        <div class="contact-info amazing-contact-info">
+          <h3 style="margin-bottom:1.5rem; color:var(--primary-red); font-size:1.3rem; font-weight:800;">Contact Details</h3>
           <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fas fa-envelope"></i>
-            </div>
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
             <div>
               <h4>Email</h4>
-              <a href="mailto:chasemallor@gmail.com">chasemallor@gmail.com</a>
+              <a href="mailto:chasemallor@gmail.com" style="color:#fff; font-weight:700;">chasemallor@gmail.com</a>
             </div>
           </div>
           <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fas fa-phone"></i>
-            </div>
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
             <div>
               <h4>Phone</h4>
-              <a href="tel:+16469890274">(646) 989-0274</a>
+              <a href="tel:+16469890274" style="color:#fff; font-weight:700;">(646) 989-0274</a>
             </div>
           </div>
           <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fas fa-clock"></i>
-            </div>
+            <div class="contact-icon"><i class="fas fa-clock"></i></div>
             <div>
               <h4>Hours</h4>
-              <p style="color:var(--text-medium-gray);">Mon–Fri: 9am–6pm<br>Sat: 10am–2pm</p>
+              <p style="color:#e5e7eb;">Mon–Fri: 9am–6pm<br>Sat: 10am–2pm</p>
             </div>
           </div>
         </div>
-        <form class="contact-form" id="contactForm">
-          <h3 style="margin-bottom:1.2rem; color:var(--primary-red); font-size:1.2rem;">Send a Message</h3>
+        <form class="contact-form amazing-contact-form" id="contactForm">
+          <h3 style="margin-bottom:1.2rem; color:var(--primary-red); font-size:1.2rem; font-weight:800;">Send a Message</h3>
           <div class="form-group">
             <input type="text" name="name" id="name" placeholder="Your Name" required>
           </div>
@@ -394,34 +377,6 @@
           </div>
           <button type="submit" class="btn btn-primary">Send Message</button>
         </form>
-      </div>
-    </div>
-              <input type="tel" id="phone" name="phone" required>
-              <label for="phone">Phone Number</label>
-            </div>
-            <div class="form-group">
-              <select id="service" name="service" required>
-                <option value="">Select Service</option>
-                <option value="brake">Brake Service</option>
-                <option value="oil">Oil Change</option>
-                <option value="tire">Tire Service</option>
-                <option value="engine">Engine Diagnostics</option>
-                <option value="electrical">Electrical Service</option>
-                <option value="climate">Climate Control</option>
-                <option value="other">Other</option>
-              </select>
-              <label for="service">Service Needed</label>
-            </div>
-            <div class="form-group">
-              <textarea id="message" name="message" rows="4"></textarea>
-              <label for="message">Additional Details</label>
-            </div>
-            <button type="submit" class="btn-primary">
-              <i class="fas fa-paper-plane"></i>
-              Send Request
-            </button>
-          </form>
-        </div>
       </div>
     </div>
   </section>

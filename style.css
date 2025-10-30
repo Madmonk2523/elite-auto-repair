@@ -1643,6 +1643,173 @@ body {
   color: var(--text-white);
 }
 
+/* ===== AMAZING STYLES ===== */
+.amazing-navbar {
+  background: linear-gradient(90deg, #181c24 60%, #23283b 100%) !important;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.10);
+  border-bottom: 2px solid var(--primary-red);
+  z-index: 1000;
+}
+.amazing-navbar .nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+}
+.amazing-navbar .nav-logo {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #fff;
+  font-family: var(--font-display);
+  letter-spacing: -1px;
+  padding: 0.2rem 0.7rem;
+}
+.amazing-navbar .nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 2.2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0 0.2rem;
+}
+.amazing-navbar .nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.08rem;
+  letter-spacing: 0.03em;
+  transition: background 0.18s, color 0.18s;
+  position: relative;
+  padding: 0.35rem 0.9rem;
+  border-radius: 0.7rem;
+  min-width: 70px;
+  text-align: center;
+  background: transparent;
+  box-shadow: none;
+  outline: none;
+}
+.amazing-navbar .nav-link:hover,
+.amazing-navbar .nav-link:focus,
+.amazing-navbar .nav-link.active {
+  background: var(--primary-red);
+  color: #fff;
+}
+
+/* Amazing Contact Section Styles */
+.amazing-contact {
+  padding: clamp(4rem, 10vw, 8rem) 0 clamp(4rem, 10vw, 8rem) 0;
+  background: linear-gradient(120deg, #23283b 60%, #181c24 100%);
+  color: #fff;
+}
+.amazing-contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5rem 7vw;
+  align-items: stretch;
+  justify-content: center;
+}
+.amazing-contact-info {
+  text-align: left;
+  flex: 1 1 340px;
+  min-width: 320px;
+  max-width: 420px;
+  background: #23283b;
+  border-radius: 1.5rem;
+  padding: 2.7rem 2.2rem 2.2rem 2.2rem;
+  box-shadow: 0 6px 32px 0 rgba(0,0,0,0.13);
+  border: 1.5px solid var(--primary-red);
+}
+.amazing-contact-form {
+  background: #fff;
+  color: #23283b;
+  padding: 2.7rem 2.2rem 2.2rem 2.2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 6px 32px 0 rgba(0,0,0,0.13);
+  flex: 1 1 380px;
+  min-width: 320px;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border: 1.5px solid var(--primary-red);
+}
+.amazing-contact-form button[type="submit"] {
+  margin-top: 0.5rem;
+  padding: 1rem 0;
+  font-size: 1.13rem;
+  border-radius: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  background: var(--primary-red);
+  color: #fff;
+  border: none;
+  box-shadow: 0 4px 16px 0 rgba(220,38,38,0.10);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.amazing-contact-form button[type="submit"]:hover {
+  background: var(--primary-red-dark);
+  box-shadow: 0 8px 24px 0 rgba(220,38,38,0.13);
+}
+.amazing-contact-form .form-group input,
+.amazing-contact-form .form-group select,
+.amazing-contact-form .form-group textarea {
+  width: 100%;
+  padding: 1rem 1.1rem;
+  border: 1.5px solid #d1d5db;
+  border-radius: 0.85rem;
+  background: #f7f8fa;
+  color: #23283b;
+  font-size: 1.05rem;
+  transition: border 0.18s, box-shadow 0.18s;
+  margin-bottom: 0.1rem;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.04);
+}
+.amazing-contact-form .form-group input:focus,
+.amazing-contact-form .form-group select:focus,
+.amazing-contact-form .form-group textarea:focus {
+  border-color: var(--primary-red);
+  outline: none;
+  background: #fff;
+}
+@media (max-width: 900px) {
+  .amazing-contact-content {
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: stretch;
+  }
+  .amazing-contact-info, .amazing-contact-form {
+    max-width: 100%;
+    min-width: 0;
+  }
+  .amazing-navbar .nav-container {
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .amazing-contact {
+    padding: 2rem 0 2rem 0;
+  }
+  .amazing-contact-info, .amazing-contact-form {
+    padding: 1.2rem 0.7rem 1.2rem 0.7rem;
+    border-radius: 1rem;
+  }
+  .amazing-navbar .nav-logo {
+    font-size: 1.3rem;
+    padding: 0.1rem 0.3rem;
+  }
+  .amazing-navbar .nav-menu {
+    gap: 1.1rem;
+  }
+  .amazing-navbar .nav-link {
+    font-size: 0.98rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+  }
+}
+
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 1024px) {
   .title-main {

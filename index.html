@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elite Auto Repair | Premium Automotive Services | Melville, NY</title>
+  <meta name="description" content="Elite Auto Repair - Melville's premier automotive service center. Expert brake repair, precision oil changes, and professional tire services. 20+ years of excellence.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Enterprise Background Effects -->
+  <div class="background-effects">
+    <div class="floating-elements">
+      <div class="floating-element" style="top: 10%; left: 5%;"></div>
+      <div class="floating-element" style="top: 60%; left: 90%;"></div>
+      <div class="floating-element" style="top: 80%; left: 15%;"></div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <i class="fas fa-cog"></i>
+        <span>Elite Auto Repair</span>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#" class="nav-link cta-button" onclick="openBookingModal()">Book Now</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-background">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          <span class="title-small">Melville's Premier</span>
+          <span class="title-main">Automotive Excellence</span>
+          <span class="title-subtitle">Where Precision Meets Performance</span>
+        </h1>
+        <p class="hero-description">
+          Experience unparalleled automotive care with our certified technicians, 
+          state-of-the-art equipment, and 20+ years of unwavering commitment to excellence.
+        </p>
+        <div class="hero-buttons">
+          <button class="btn-primary" onclick="openBookingModal()">
+            <i class="fas fa-calendar-alt"></i>
+            Schedule Service
+          </button>
+          <button class="btn-secondary" onclick="scrollToSection('services')">
+            <i class="fas fa-tools"></i>
+            Our Services
+          </button>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number" data-suffix="+">5000</span>
+            <span class="stat-label">Satisfied Customers</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-suffix="+">20</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-suffix="%">98</span>
+            <span class="stat-label">Customer Satisfaction</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-suffix="★">4.9</span>
+            <span class="stat-label">Average Rating</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Our Expertise</span>
+        <h2 class="section-title">Premium Automotive Services</h2>
+        <p class="section-description">
+          We deliver exceptional automotive care through precision, expertise, and unwavering attention to detail.
+        </p>
+      </div>
+      
+      <div class="services-grid">
+        <div class="service-card featured">
+          <div class="service-icon">
+            <i class="fas fa-car-crash"></i>
+          </div>
+          <h3>Brake System Specialists</h3>
+          <p class="service-price">Starting at $89</p>
+          <p>Complete brake system diagnosis, repair, and replacement using premium parts and advanced diagnostic equipment.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Computer diagnostic testing</li>
+            <li><i class="fas fa-check"></i> Premium brake pad installation</li>
+            <li><i class="fas fa-check"></i> Rotor resurfacing & replacement</li>
+            <li><i class="fas fa-check"></i> Brake fluid system flush</li>
+          </ul>
+          <button class="service-btn" onclick="openServiceModal('brake')">Learn More</button>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-oil-can"></i>
+          </div>
+          <h3>Precision Oil Services</h3>
+          <p class="service-price">Starting at $49</p>
+          <p>Professional oil changes using premium synthetic oils and genuine filters for optimal engine performance.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Full synthetic oil options</li>
+            <li><i class="fas fa-check"></i> Multi-point inspection</li>
+            <li><i class="fas fa-check"></i> Filter replacement</li>
+            <li><i class="fas fa-check"></i> Fluid level checks</li>
+          </ul>
+          <button class="service-btn" onclick="openServiceModal('oil')">Learn More</button>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-circle"></i>
+          </div>
+          <h3>Tire Experts</h3>
+          <p class="service-price">Starting at $129</p>
+          <p>Professional tire installation, balancing, alignment, and repair services for all vehicle types.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Wheel alignment</li>
+            <li><i class="fas fa-check"></i> Tire balancing</li>
+            <li><i class="fas fa-check"></i> Pressure monitoring</li>
+            <li><i class="fas fa-check"></i> Rotation service</li>
+          </ul>
+          <button class="service-btn" onclick="openServiceModal('tire')">Learn More</button>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <h3>Engine Diagnostics</h3>
+          <p class="service-price">Starting at $149</p>
+          <p>Advanced computer diagnostics and engine performance optimization using state-of-the-art equipment.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Computer scan diagnostics</li>
+            <li><i class="fas fa-check"></i> Performance analysis</li>
+            <li><i class="fas fa-check"></i> Emissions testing</li>
+            <li><i class="fas fa-check"></i> Tune-up services</li>
+          </ul>
+          <button class="service-btn" onclick="openServiceModal('engine')">Learn More</button>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-battery-half"></i>
+          </div>
+          <h3>Electrical Systems</h3>
+          <p class="service-price">Starting at $99</p>
+          <p>Complete electrical system diagnosis, battery testing, alternator service, and starter repair.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Battery testing & replacement</li>
+            <li><i class="fas fa-check"></i> Alternator diagnostics</li>
+            <li><i class="fas fa-check"></i> Starter motor service</li>
+            <li><i class="fas fa-check"></i> Wiring inspection</li>
+          </ul>
+          <button class="service-btn" onclick="openServiceModal('electrical')">Learn More</button>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-thermometer-half"></i>
+          </div>
+          <h3>Climate Control</h3>
+          <p class="service-price">Starting at $119</p>
+          <p>Professional A/C and heating system service, repair, and maintenance for year-round comfort.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> A/C system recharge</li>
+            <li><i class="fas fa-check"></i> Compressor service</li>
+            <li><i class="fas fa-check"></i> Heating system repair</li>
+            <li><i class="fas fa-check"></i> Filter replacement</li>
+          </ul>
+          <button class="service-btn" onclick="openServiceModal('climate')">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <span class="section-subtitle">Our Story</span>
+          <h2 class="section-title">Two Decades of Automotive Excellence</h2>
+          <p class="about-description">
+            Founded in 2005, Elite Auto Repair has been Melville's trusted automotive partner for over two decades. 
+            Our family-owned business combines traditional values with cutting-edge technology to deliver unparalleled service.
+          </p>
+          
+          <div class="about-features">
+            <div class="feature">
+              <div class="feature-icon">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <div class="feature-content">
+                <h4>ASE Certified Technicians</h4>
+                <p>Our team holds the highest industry certifications and undergoes continuous training.</p>
+              </div>
+            </div>
+            
+            <div class="feature">
+              <div class="feature-icon">
+                <i class="fas fa-tools"></i>
+              </div>
+              <div class="feature-content">
+                <h4>State-of-the-Art Equipment</h4>
+                <p>We invest in the latest diagnostic and repair equipment for precise, efficient service.</p>
+              </div>
+            </div>
+            
+            <div class="feature">
+              <div class="feature-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Comprehensive Warranty</h4>
+                <p>All our work is backed by comprehensive warranties for your peace of mind.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-cta">
+            <button class="btn-primary" onclick="openBookingModal()">
+              Experience the Difference
+            </button>
+          </div>
+        </div>
+        
+        <div class="about-image">
+          <div class="image-placeholder">
+            <i class="fas fa-car-side"></i>
+            <p>Professional Auto Service</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Client Testimonials</span>
+        <h2 class="section-title">What Our Customers Say</h2>
+      </div>
+      
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>"Exceptional service! The team at Elite Auto Repair diagnosed and fixed my brake issue quickly and professionally. I trust them completely with my vehicle."</p>
+          <div class="testimonial-author">
+            <div class="author-info">
+              <h4>Sarah Johnson</h4>
+              <span>Long Island Resident</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>"I've been coming here for 5 years. Honest pricing, quality work, and they always explain everything clearly. This is how auto repair should be done."</p>
+          <div class="testimonial-author">
+            <div class="author-info">
+              <h4>Michael Chen</h4>
+              <span>Satisfied Customer</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>"Professional, reliable, and fair. Elite Auto Repair has earned my trust and my business for life. Highly recommend to anyone in the area."</p>
+          <div class="testimonial-author">
+            <div class="author-info">
+              <h4>Jennifer Davis</h4>
+              <span>Local Business Owner</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="contact-content">
+        <div class="contact-info">
+          <span class="section-subtitle">Get In Touch</span>
+          <h2 class="section-title">Ready to Experience Excellence?</h2>
+          <p>Contact us today to schedule your service appointment or get a free estimate.</p>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-content">
+                <h4>Visit Our Shop</h4>
+                <p>24 Walt Whitman Rd<br>Melville, NY 11747</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-content">
+                <h4>Call Us Today</h4>
+                <p><a href="tel:6315550923">(631) 555-0923</a></p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-content">
+                <h4>Email Us</h4>
+                <p><a href="mailto:contact@eliteautorepair.com">contact@eliteautorepair.com</a></p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="contact-content">
+                <h4>Business Hours</h4>
+                <p>Mon-Fri: 7:30 AM - 6:00 PM<br>Saturday: 8:00 AM - 4:00 PM<br>Sunday: Closed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <form id="contactForm" class="form">
+            <h3>Request Service Appointment</h3>
+            <div class="form-group">
+              <input type="text" id="name" name="name" required>
+              <label for="name">Full Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" required>
+              <label for="email">Email Address</label>
+            </div>
+            <div class="form-group">
+              <input type="tel" id="phone" name="phone" required>
+              <label for="phone">Phone Number</label>
+            </div>
+            <div class="form-group">
+              <select id="service" name="service" required>
+                <option value="">Select Service</option>
+                <option value="brake">Brake Service</option>
+                <option value="oil">Oil Change</option>
+                <option value="tire">Tire Service</option>
+                <option value="engine">Engine Diagnostics</option>
+                <option value="electrical">Electrical Service</option>
+                <option value="climate">Climate Control</option>
+                <option value="other">Other</option>
+              </select>
+              <label for="service">Service Needed</label>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" rows="4"></textarea>
+              <label for="message">Additional Details</label>
+            </div>
+            <button type="submit" class="btn-primary">
+              <i class="fas fa-paper-plane"></i>
+              Send Request
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <i class="fas fa-cog"></i>
+            <span>Elite Auto Repair</span>
+          </div>
+          <p>Melville's premier automotive service center, delivering excellence since 2005.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Google"><i class="fab fa-google"></i></a>
+            <a href="#" aria-label="Yelp"><i class="fab fa-yelp"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Brake Repair</a></li>
+            <li><a href="#services">Oil Changes</a></li>
+            <li><a href="#services">Tire Service</a></li>
+            <li><a href="#services">Engine Diagnostics</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <p>24 Walt Whitman Rd<br>Melville, NY 11747</p>
+          <p><a href="tel:6315550923">(631) 555-0923</a></p>
+          <p><a href="mailto:contact@eliteautorepair.com">contact@eliteautorepair.com</a></p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Elite Auto Repair. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Booking Modal -->
+  <div id="bookingModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Schedule Your Service</h3>
+        <span class="close" onclick="closeBookingModal()">&times;</span>
+      </div>
+      <div class="modal-body">
+        <p>Ready to experience premium automotive care?</p>
+        <div class="booking-options">
+          <a href="tel:6315550923" class="booking-option">
+            <i class="fas fa-phone"></i>
+            <span>Call Now: (631) 555-0923</span>
+          </a>
+          <button class="booking-option" onclick="scrollToSection('contact')">
+            <i class="fas fa-calendar-alt"></i>
+            <span>Request Appointment Online</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

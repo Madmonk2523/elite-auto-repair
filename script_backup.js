@@ -1,1729 +1,480 @@
-/*// Elite Auto Repair - Premium JavaScript// Elite Auto Repair - Premium JavaScript// ============================// ============================// ============================// ============================// ===== GLOBAL VARIABLES =====
+// Elite Auto Repair - Premium JavaScript// ============================// ============================// ============================// ============================// ===== GLOBAL VARIABLES =====
 
- * Elite Auto Repair - Premium JavaScript
+// Counter Animations & Interactive Features
 
- * $10,000 Quality Website with EPIC Counter Animationsconsole.log('🚀 Elite Auto Repair JavaScript Loading...');
+// ELITE AUTO REPAIR - PREMIUM JAVASCRIPT
 
- * Fixed and optimized for perfect performance
+console.log('🚀 Elite Auto Repair JavaScript Loading...');
 
- */// Counter Animations & Interactive Features
+// EPIC Counter Animations that ACTUALLY WORK!// ELITE AUTO REPAIR - PREMIUM JAVASCRIPT
 
+// Initialize when DOM is loaded
 
+document.addEventListener('DOMContentLoaded', function() {// ============================
 
-console.log('🚀 Elite Auto Repair JavaScript Loading...');// Initialize when DOM is loaded
+    console.log('✨ DOM Loaded - Starting initialization...');
 
+    initializeWebsite();// $10,000 Professional Website with EPIC Counter Animations!// ELITE AUTO REPAIR - PREMIUM JAVASCRIPT
 
+});
 
-// Initialize everything when DOM is readydocument.addEventListener('DOMContentLoaded', function() {// ELITE AUTO REPAIR - PREMIUM JAVASCRIPT
+console.log('🚀 Elite Auto Repair JavaScript Loading...');
 
-document.addEventListener('DOMContentLoaded', function() {
+// Main initialization function
 
-    console.log('✨ DOM Ready - Starting Elite Auto Repair Website...');    console.log('✨ DOM Loaded - Starting initialization...');
+function initializeWebsite() {// ============================
 
-    initializeEverything();
+    console.log('🎯 Initializing Premium Website...');
 
-});    initializeWebsite();console.log('🚀 Elite Auto Repair JavaScript Loading...');
+    // Global Variables
 
+    initializeNavigation();
 
+    initializeMobileMenu();let isLoading = false;// $10,000 Professional Website// ELITE AUTO REPAIR - PREMIUM JAVASCRIPTlet isLoading = true;
 
-// Master initialization function});
+    initializeCounterAnimations();
 
-function initializeEverything() {
+    initializeHeroAnimations();let currentSection = 'home';
 
-    console.log('🎯 Initializing ALL Premium Features...');// EPIC Counter Animations that ACTUALLY WORK!// ELITE AUTO REPAIR - PREMIUM JAVASCRIPT
+    initializeScrollEffects();
 
-    
+    initializeIntersectionObserver();// Global Variables
 
-    try {// Main initialization function
+    initializeSmoothScrolling();
 
-        // Initialize all components
+    initializeServiceCards();// DOM Content Loaded - Initialize Everything
 
-        setupNavigation();function initializeWebsite() {// Initialize when DOM is loaded
+    initializeFormValidation();
 
-        setupMobileMenu();
+    document.addEventListener('DOMContentLoaded', function() {let isLoading = false;// ============================
 
-        setupCounterAnimations();    console.log('🎯 Initializing Premium Website...');
+    // Mark as loaded
+    setTimeout(() => {
+        document.body.classList.add('loaded');
+        console.log('🎉 Website fully loaded!');
+    }, 500);
+}
 
-        setupHeroSequence();
+// Counter Animations - The EPIC ones that actually work!
 
-        setupScrollEffects();    document.addEventListener('DOMContentLoaded', function() {// ============================
+function initializeCounterAnimations() {
 
-        setupObservers();
-
-        setupSmoothScrolling();    initializeNavigation();
-
-        setupServiceCards();
-
-        setupForms();    initializeMobileMenu();    console.log('✨ DOM Loaded - Starting initialization...');
-
-        setupModals();
-
-            initializeCounterAnimations();
-
-        // Mark website as fully loaded
-
-        setTimeout(() => {    initializeHeroAnimations();    initializeWebsite();// $10,000 Professional Website with EPIC Counter Animations!// ELITE AUTO REPAIR - PREMIUM JAVASCRIPT
-
-            document.body.classList.add('elite-loaded');
-
-            console.log('🎉 Elite Auto Repair Website FULLY LOADED!');    initializeScrollEffects();
-
-        }, 1000);
-
-            initializeIntersectionObserver();});
-
-    } catch (error) {
-
-        console.error('❌ Error during initialization:', error);    initializeSmoothScrolling();
-
-    }
-
-}    initializeServiceCards();console.log('🚀 Elite Auto Repair JavaScript Loading...');
-
-
-
-// ====================================    initializeFormValidation();
-
-// EPIC COUNTER ANIMATIONS - PERFECTED
-
-// ====================================    // Main initialization function
-
-
-
-function setupCounterAnimations() {    // Mark as loaded
-
-    console.log('🎯 Setting up EPIC Counter Animations...');
-
-        setTimeout(() => {function initializeWebsite() {// ============================
-
-    const counterElements = document.querySelectorAll('.stat-number');
-
-    console.log(`Found ${counterElements.length} counters to animate`);        document.body.classList.add('loaded');
+    console.log('🎯 Initializing EPIC Counter Animations...');// ============================
 
     
 
-    if (counterElements.length === 0) {        console.log('🎉 Website fully loaded!');    console.log('🎯 Initializing Premium Website...');
+    const counters = document.querySelectorAll('.stat-number');// MAIN INITIALIZATION// DOM Content Loaded - Initialize Everything
 
-        console.warn('⚠️ No counter elements found');
+    console.log(`Found ${counters.length} counters to animate`);
 
-        return;    }, 500);
+    // ============================
 
-    }
+    if (counters.length === 0) {
 
-    }    // Global Variables
+        console.warn('⚠️ No counters found! Check your HTML structure.');function initializeWebsite() {document.addEventListener('DOMContentLoaded', function() {// Global Variables
 
-    // Initialize each counter
+        return;
 
-    counterElements.forEach((counter, index) => {
+    }    console.log('✨ Initializing Premium Website...');
 
-        const targetValue = parseInt(counter.getAttribute('data-count'));
+    
 
-        // Counter Animations - The EPIC ones that actually work!    initializeNavigation();
+    counters.forEach((counter, index) => {        console.log('🚀 Elite Auto Repair - Loading Premium Website...');
 
-        if (isNaN(targetValue) || targetValue <= 0) {
+        const dataCount = counter.getAttribute('data-count');
 
-            console.warn(`Invalid target value for counter ${index + 1}: ${targetValue}`);function initializeCounterAnimations() {
-
-            return;
-
-        }    console.log('🎯 Initializing EPIC Counter Animations...');    initializeMobileMenu();let isLoading = false;// $10,000 Professional Website// ELITE AUTO REPAIR - PREMIUM JAVASCRIPTlet isLoading = true;
+        const target = parseInt(dataCount);    // Initialize all components in order
 
         
 
-        console.log(`Counter ${index + 1}: Will animate to ${targetValue}`);    
+        console.log(`Counter ${index + 1}: target=${target}`);    initializeNavigation();    initializeWebsite();let isLoading = false;// ============================
 
         
 
-        // Set initial state    const counters = document.querySelectorAll('.stat-number');    initializeCounterAnimations();
+        if (isNaN(target) || target <= 0) {    initializeMobileMenu();
 
-        counter.textContent = '0';
+            console.warn(`⚠️ Invalid target for counter ${index + 1}: ${target}`);
 
-        counter.style.color = '#D4AF37';    console.log(`Found ${counters.length} counters to animate`);
+            return;    initializeCounterAnimations(); // Initialize counters first});
 
-        counter.hasBeenAnimated = false;
+        }
 
-                initializeHeroAnimations();let currentSection = 'home';
+            initializeHeroAnimations();    // Then start hero animations
 
-        // Create the animation function
+        // Set initial state
 
-        counter.animateToTarget = function() {    if (counters.length === 0) {
+        counter.textContent = '0';    initializeScrollEffects();let currentSection = 'home';
 
-            if (this.hasBeenAnimated) {
+        counter.hasAnimated = false;
 
-                console.log(`Counter ${index + 1} already animated`);        console.warn('⚠️ No counters found! Check your HTML structure.');    initializeScrollEffects();
+            initializeIntersectionObserver();
 
-                return;
+        // Create animation function
 
-            }        return;
+        const animateCounter = () => {    initializeFormValidation();// ============================
+
+            if (counter.hasAnimated) return;
+
+                initializeModals();
+
+            console.log(`🚀 Animating counter ${index + 1} to ${target}`);
+
+            counter.hasAnimated = true;    initializeSmoothScrolling();// MAIN INITIALIZATION// ===== DOM CONTENT LOADED =====
 
             
 
-            console.log(`🚀 Starting animation for counter ${index + 1} → ${targetValue}`);    }    initializeIntersectionObserver();// Global Variables
+            let currentValue = 0;    initializeServiceCards();
 
-            this.hasBeenAnimated = true;
+            const duration = 2000;
 
-                
+            const startTime = performance.now();    // ============================
 
-            let currentNumber = 0;
+            
 
-            const animationDuration = 2500;    counters.forEach((counter, index) => {    initializeSmoothScrolling();
+            const updateCounter = (timestamp) => {    // Mark as loaded
 
-            const startTime = performance.now();
+                const elapsed = timestamp - startTime;
 
-                    const dataCount = counter.getAttribute('data-count');
+                const progress = Math.min(elapsed / duration, 1);    setTimeout(() => {function initializeWebsite() {// DOM Content Loaded - Initialize Everything
 
-            // Add glow effect during animation
+                const easeOut = 1 - Math.pow(1 - progress, 3);
 
-            this.style.transition = 'all 0.3s ease';        const target = parseInt(dataCount);    initializeServiceCards();// DOM Content Loaded - Initialize Everything
+                        document.body.classList.add('loaded');
 
-            this.style.textShadow = '0 0 20px rgba(255, 215, 0, 0.8)';
+                currentValue = Math.floor(easeOut * target);
 
-                    
-
-            const animateStep = (timestamp) => {
-
-                const elapsed = timestamp - startTime;        console.log(`Counter ${index + 1}: target=${target}`);    initializeFormValidation();
-
-                const progress = Math.min(elapsed / animationDuration, 1);
-
-                        
-
-                // Use easeOutQuart for smooth animation
-
-                const easeProgress = 1 - Math.pow(1 - progress, 4);        if (isNaN(target) || target <= 0) {    document.addEventListener('DOMContentLoaded', function() {let isLoading = false;// ============================
-
-                currentNumber = Math.floor(easeProgress * targetValue);
-
-                            console.warn(`⚠️ Invalid target for counter ${index + 1}: ${target}`);
-
-                // Update display
-
-                this.textContent = currentNumber.toString();            return;    // Mark as loaded
+                counter.textContent = currentValue.toString();        console.log('🎉 Website fully loaded!');    // Initialize all components
 
                 
 
-                // Dynamic color transitions        }    setTimeout(() => {
+                // Color effects    }, 500);
 
-                if (progress < 0.25) {
+                if (progress < 0.3) {
 
-                    this.style.color = '#FFD700'; // Bright gold start                document.body.classList.add('loaded');
+                    counter.style.color = '#FFD700';}    initializeNavigation();document.addEventListener('DOMContentLoaded', function() {// Global Variablesdocument.addEventListener('DOMContentLoaded', function() {
 
-                } else if (progress < 0.75) {
+                } else if (progress < 0.7) {
 
-                    this.style.color = '#FFFFFF'; // White middle        // Set initial state        console.log('🎉 Website fully loaded!');
+                    counter.style.color = '#FFFFFF';
 
                 } else {
 
-                    this.style.color = '#D4AF37'; // Final gold        counter.textContent = '0';    }, 500);
+                    counter.style.color = '#D4AF37';// ============================    initializeMobileMenu();
 
                 }
 
-                        counter.hasAnimated = false;}
+                // EPIC COUNTER ANIMATIONS - FIXED VERSION!
 
-                // Continue animation or finish
+                if (progress < 1) {
 
-                if (progress < 1) {        
+                    requestAnimationFrame(updateCounter);// ============================    initializeHeroAnimations();    console.log('🚀 Elite Auto Repair - Loading Premium Website...');
 
-                    requestAnimationFrame(animateStep);
+                } else {
 
-                } else {        // Create animation function// Counter Animations - The EPIC ones that actually work!
+                    // Animation completefunction initializeCounterAnimations() {
 
-                    // Final state
+                    counter.textContent = target.toString();
 
-                    this.textContent = targetValue.toString();        const animateCounter = () => {
+                    counter.style.color = '#D4AF37';    console.log('🎯 Initializing EPIC Counter Animations...');    initializeScrollEffects();
 
-                    this.style.color = '#D4AF37';
+                    counter.style.transform = 'scale(1.1)';
 
-                                if (counter.hasAnimated) return;function initializeCounterAnimations() {
-
-                    // Epic finale effect
-
-                    this.style.transform = 'scale(1.15)';            
-
-                    this.style.textShadow = '0 0 30px rgba(255, 215, 0, 1)';
-
-                                console.log(`🚀 Animating counter ${index + 1} to ${target}`);    console.log('🎯 Initializing EPIC Counter Animations...');// ============================
-
-                    setTimeout(() => {
-
-                        this.style.transform = 'scale(1)';            counter.hasAnimated = true;
-
-                        this.style.textShadow = '0 2px 15px rgba(212, 175, 55, 0.6)';
-
-                    }, 400);                
+                    counter.style.textShadow = '0 0 20px #FFD700';    
 
                     
 
-                    console.log(`✅ Counter ${index + 1} animation COMPLETE!`);            let currentValue = 0;
+                    setTimeout(() => {    const counters = document.querySelectorAll('.stat-number');    initializeCounterAnimations();    initializeWebsite();let isLoading = false;    initializeWebsite();
 
-                }
+                        counter.style.transform = 'scale(1)';
 
-            };            const duration = 2000;    const counters = document.querySelectorAll('.stat-number');// MAIN INITIALIZATION// DOM Content Loaded - Initialize Everything
+                        counter.style.textShadow = '0 2px 10px rgba(212, 175, 55, 0.5)';    console.log(`Found ${counters.length} counters to animate`);
 
-            
+                    }, 300);
 
-            requestAnimationFrame(animateStep);            const startTime = performance.now();
+                            initializeIntersectionObserver();
 
-        };
+                    console.log(`✅ Counter ${index + 1} animation complete!`);
 
-    });                console.log(`Found ${counters.length} counters to animate`);
-
-    
-
-    console.log('✅ Counter animations setup complete');            const updateCounter = (timestamp) => {
-
-}
-
-                const elapsed = timestamp - startTime;    // ============================
-
-// Function to trigger all counter animations with staggered timing
-
-function triggerAllCounters() {                const progress = Math.min(elapsed / duration, 1);
-
-    console.log('🎬 TRIGGERING ALL COUNTER ANIMATIONS!');
-
-                    const easeOut = 1 - Math.pow(1 - progress, 3);    if (counters.length === 0) {
-
-    const counters = document.querySelectorAll('.stat-number');
-
-                    
-
-    counters.forEach((counter, index) => {
-
-        if (counter.animateToTarget) {                currentValue = Math.floor(easeOut * target);        console.warn('⚠️ No counters found! Check your HTML structure.');function initializeWebsite() {document.addEventListener('DOMContentLoaded', function() {// Global Variables
-
-            // Stagger each counter by 400ms for dramatic effect
-
-            setTimeout(() => {                counter.textContent = currentValue.toString();
-
-                console.log(`🎯 Triggering counter ${index + 1}`);
-
-                counter.animateToTarget();                        return;
-
-            }, index * 400);
-
-        }                // Color effects
-
-    });
-
-}                if (progress < 0.3) {    }    console.log('✨ Initializing Premium Website...');
-
-
-
-// ====================================                    counter.style.color = '#FFD700';
-
-// HERO SEQUENCE ANIMATIONS
-
-// ====================================                } else if (progress < 0.7) {    
-
-
-
-function setupHeroSequence() {                    counter.style.color = '#FFFFFF';
-
-    console.log('🎭 Setting up Hero Sequence...');
-
-                    } else {    counters.forEach((counter, index) => {        console.log('🚀 Elite Auto Repair - Loading Premium Website...');
-
-    const heroSelectors = [
-
-        { selector: '.hero-title', delay: 0 },                    counter.style.color = '#D4AF37';
-
-        { selector: '.hero-description', delay: 300 },
-
-        { selector: '.hero-buttons', delay: 600 },                }        const dataCount = counter.getAttribute('data-count');
-
-        { selector: '.hero-stats', delay: 900 }
-
-    ];                
-
-    
-
-    // Add initial hidden state                if (progress < 1) {        const target = parseInt(dataCount);    // Initialize all components in order
-
-    heroSelectors.forEach(({ selector }) => {
-
-        const element = document.querySelector(selector);                    requestAnimationFrame(updateCounter);
-
-        if (element) {
-
-            element.style.opacity = '0';                } else {        
-
-            element.style.transform = 'translateY(30px)';
-
-            element.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';                    // Animation complete
-
-        }
-
-    });                    counter.textContent = target.toString();        console.log(`Counter ${index + 1}: target=${target}`);    initializeNavigation();    initializeWebsite();let isLoading = false;// ============================
-
-    
-
-    // Animate each element in sequence                    counter.style.color = '#D4AF37';
-
-    heroSelectors.forEach(({ selector, delay }) => {
-
-        setTimeout(() => {                    counter.style.transform = 'scale(1.1)';        
-
-            const element = document.querySelector(selector);
-
-            if (element) {                    counter.style.textShadow = '0 0 20px #FFD700';
-
-                element.style.opacity = '1';
-
-                element.style.transform = 'translateY(0)';                            if (isNaN(target) || target <= 0) {    initializeMobileMenu();
-
-                
-
-                // Special handling for stats - trigger counters                    setTimeout(() => {
-
-                if (selector === '.hero-stats') {
-
-                    setTimeout(() => {                        counter.style.transform = 'scale(1)';            console.warn(`⚠️ Invalid target for counter ${index + 1}: ${target}`);
-
-                        console.log('🎯 Hero stats visible - starting counters!');
-
-                        triggerAllCounters();                        counter.style.textShadow = '0 2px 10px rgba(212, 175, 55, 0.5)';
-
-                    }, 800);
-
-                }                    }, 300);            return;    initializeCounterAnimations(); // Initialize counters first});
-
-            }
-
-        }, delay);                    
-
-    });
-
-                        console.log(`✅ Counter ${index + 1} animation complete!`);        }
-
-    console.log('✅ Hero sequence setup complete');
-
-}                }
-
-
-
-// ====================================            };            initializeHeroAnimations();    // Then start hero animations
-
-// NAVIGATION SYSTEM
-
-// ====================================            
-
-
-
-function setupNavigation() {            requestAnimationFrame(updateCounter);        // Set initial state
-
-    console.log('🧭 Setting up Navigation...');
+                }    if (counters.length === 0) {
 
             };
 
-    const navbar = document.getElementById('navbar');
+                    console.warn('⚠️ No counters found! Check your HTML structure.');    initializeFormValidation();});
 
-    const navLinks = document.querySelectorAll('.nav-link');                counter.textContent = '0';    initializeScrollEffects();let currentSection = 'home';
+            requestAnimationFrame(updateCounter);
 
-    
-
-    if (!navbar) {        counter.animateCounter = animateCounter;
-
-        console.warn('⚠️ Navbar not found');
-
-        return;    });        counter.hasAnimated = false;
-
-    }
-
-    }
-
-    // Scroll-based navbar styling
-
-    function handleNavbarScroll() {            initializeIntersectionObserver();
-
-        if (window.scrollY > 80) {
-
-            navbar.classList.add('scrolled');// Start all counter animations with stagger
-
-        } else {
-
-            navbar.classList.remove('scrolled');function startAllCounterAnimations() {        // Create animation function
-
-        }
-
-    }    console.log('🎬 Starting ALL counter animations...');
-
-    
-
-    // Active link updates            const animateCounter = () => {    initializeFormValidation();// ============================
-
-    function updateActiveLinks() {
-
-        const sections = document.querySelectorAll('section[id]');    const counters = document.querySelectorAll('.stat-number');
-
-        let currentSection = '';
-
-        const scrollPosition = window.scrollY + 120;    counters.forEach((counter, index) => {            if (counter.hasAnimated) return;
+        };        return;
 
         
 
-        sections.forEach(section => {        if (counter.animateCounter) {
-
-            const sectionTop = section.offsetTop;
-
-            const sectionHeight = section.clientHeight;            setTimeout(() => {                initializeModals();
-
-            
-
-            if (scrollPosition >= sectionTop && scrollPosition <= sectionTop + sectionHeight) {                counter.animateCounter();
-
-                currentSection = section.getAttribute('id');
-
-            }            }, index * 300);            console.log(`🚀 Animating counter ${index + 1} to ${target}`);
-
-        });
-
-                }
-
-        navLinks.forEach(link => {
-
-            link.classList.remove('active');    });            counter.hasAnimated = true;    initializeSmoothScrolling();// MAIN INITIALIZATION// ===== DOM CONTENT LOADED =====
-
-            if (link.getAttribute('href') === `#${currentSection}`) {
-
-                link.classList.add('active');}
-
-            }
-
-        });            
-
-    }
-
-    // Hero animations sequence
-
-    // Throttled scroll handler
-
-    let scrollTimeout;function initializeHeroAnimations() {            let currentValue = 0;    initializeServiceCards();
-
-    window.addEventListener('scroll', () => {
-
-        if (scrollTimeout) {    console.log('🎭 Initializing Hero Animations...');
-
-            clearTimeout(scrollTimeout);
-
-        }                const duration = 2000;
-
-        scrollTimeout = setTimeout(() => {
-
-            handleNavbarScroll();    const heroElements = [
-
-            updateActiveLinks();
-
-        }, 10);        '.hero-title',            const startTime = performance.now();    // ============================
+        counter.animateCounter = animateCounter;    }    initializeModals();
 
     });
-
-            '.hero-description', 
-
-    // Click handlers for navigation
-
-    navLinks.forEach(link => {        '.hero-buttons',            
-
-        link.addEventListener('click', function(e) {
-
-            e.preventDefault();        '.hero-stats'
-
-            
-
-            // Update active state    ];            const updateCounter = (timestamp) => {    // Mark as loaded
-
-            navLinks.forEach(l => l.classList.remove('active'));
-
-            this.classList.add('active');    
-
-            
-
-            // Smooth scroll to target    heroElements.forEach((selector, index) => {                const elapsed = timestamp - startTime;
-
-            const targetId = this.getAttribute('href');
-
-            const targetElement = document.querySelector(targetId);        const element = document.querySelector(selector);
-
-            
-
-            if (targetElement) {        if (element) {                const progress = Math.min(elapsed / duration, 1);    setTimeout(() => {function initializeWebsite() {// DOM Content Loaded - Initialize Everything
-
-                smoothScrollTo(targetElement);
-
-            }            setTimeout(() => {
-
-        });
-
-    });                element.style.opacity = '1';                const easeOut = 1 - Math.pow(1 - progress, 3);
-
-    
-
-    console.log('✅ Navigation setup complete');                element.style.transform = 'translateY(0)';
-
-}
-
-                                        document.body.classList.add('loaded');
-
-// ====================================
-
-// MOBILE MENU                // Start counters when stats are visible
-
-// ====================================
-
-                if (selector === '.hero-stats') {                currentValue = Math.floor(easeOut * target);
-
-function setupMobileMenu() {
-
-    console.log('📱 Setting up Mobile Menu...');                    setTimeout(() => {
-
-    
-
-    const hamburger = document.getElementById('hamburger');                        startAllCounterAnimations();                counter.textContent = currentValue.toString();        console.log('🎉 Website fully loaded!');    // Initialize all components
-
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    const mobileLinks = document.querySelectorAll('.mobile-nav-link');                    }, 500);
-
-    
-
-    if (!hamburger || !mobileMenu) {                }                
-
-        console.warn('⚠️ Mobile menu elements not found');
-
-        return;            }, 300 + (index * 300));
-
-    }
-
-            }                // Color effects    }, 500);
-
-    // Toggle mobile menu
-
-    hamburger.addEventListener('click', function() {    });
-
-        const isActive = hamburger.classList.toggle('active');
-
-        mobileMenu.classList.toggle('active');}                if (progress < 0.3) {
-
-        document.body.classList.toggle('menu-open');
-
-        
-
-        // Animate hamburger bars
-
-        const spans = hamburger.querySelectorAll('span');// Navigation system                    counter.style.color = '#FFD700';}    initializeNavigation();document.addEventListener('DOMContentLoaded', function() {// Global Variablesdocument.addEventListener('DOMContentLoaded', function() {
-
-        if (isActive) {
-
-            spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';function initializeNavigation() {
-
-            spans[1].style.opacity = '0';
-
-            spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';    const navbar = document.getElementById('navbar');                } else if (progress < 0.7) {
-
-        } else {
-
-            spans.forEach(span => {    const navLinks = document.querySelectorAll('.nav-link');
-
-                span.style.transform = '';
-
-                span.style.opacity = '';                        counter.style.color = '#FFFFFF';
-
-            });
-
-        }    if (!navbar) return;
-
-    });
-
-                        } else {
-
-    // Close menu on link click
-
-    mobileLinks.forEach(link => {    // Scroll effect
-
-        link.addEventListener('click', function() {
-
-            hamburger.classList.remove('active');    window.addEventListener('scroll', throttle(() => {                    counter.style.color = '#D4AF37';// ============================    initializeMobileMenu();
-
-            mobileMenu.classList.remove('active');
-
-            document.body.classList.remove('menu-open');        if (window.scrollY > 50) {
-
-            
-
-            const spans = hamburger.querySelectorAll('span');            navbar.classList.add('scrolled');                }
-
-            spans.forEach(span => {
-
-                span.style.transform = '';        } else {
-
-                span.style.opacity = '';
-
-            });            navbar.classList.remove('scrolled');                // EPIC COUNTER ANIMATIONS - FIXED VERSION!
-
-        });
-
-    });        }
-
-    
-
-    console.log('✅ Mobile menu setup complete');        updateActiveNavLink();                if (progress < 1) {
-
-}
-
-    }, 10));
-
-// ====================================
-
-// SCROLL EFFECTS & PROGRESS                        requestAnimationFrame(updateCounter);// ============================    initializeHeroAnimations();    console.log('🚀 Elite Auto Repair - Loading Premium Website...');
-
-// ====================================
-
-    // Click handlers
-
-function setupScrollEffects() {
-
-    console.log('🌊 Setting up Scroll Effects...');    navLinks.forEach(link => {                } else {
-
-    
-
-    // Create scroll progress bar        link.addEventListener('click', function(e) {
-
-    const progressBar = document.createElement('div');
-
-    progressBar.className = 'scroll-progress-bar';            e.preventDefault();                    // Animation completefunction initializeCounterAnimations() {
-
-    progressBar.style.cssText = `
-
-        position: fixed;            navLinks.forEach(l => l.classList.remove('active'));
-
-        top: 0;
-
-        left: 0;            this.classList.add('active');                    counter.textContent = target.toString();
-
-        width: 0%;
-
-        height: 4px;            
-
-        background: linear-gradient(90deg, #D4AF37, #FFD700, #FFFFFF);
-
-        z-index: 10000;            const targetId = this.getAttribute('href');                    counter.style.color = '#D4AF37';    console.log('🎯 Initializing EPIC Counter Animations...');    initializeScrollEffects();
-
-        transition: width 0.2s ease-out;
-
-        box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);            const targetElement = document.querySelector(targetId);
-
-    `;
-
-    document.body.appendChild(progressBar);            if (targetElement) {                    counter.style.transform = 'scale(1.1)';
-
-    
-
-    // Update progress on scroll                smoothScrollToElement(targetElement);
-
-    function updateScrollProgress() {
-
-        const scrollTotal = document.documentElement.scrollHeight - window.innerHeight;            }                    counter.style.textShadow = '0 0 20px #FFD700';    
-
-        const scrollCurrent = window.scrollY;
-
-        const scrollPercentage = (scrollCurrent / scrollTotal) * 100;        });
-
-        
-
-        progressBar.style.width = `${Math.min(scrollPercentage, 100)}%`;    });                    
-
-    }
-
-        
-
-    // Parallax effect for hero
-
-    function updateParallax() {    console.log('✅ Navigation initialized');                    setTimeout(() => {    const counters = document.querySelectorAll('.stat-number');    initializeCounterAnimations();    initializeWebsite();let isLoading = false;    initializeWebsite();
-
-        const hero = document.querySelector('.hero-background');
-
-        if (hero && window.scrollY < window.innerHeight) {}
-
-            const scrolled = window.scrollY;
-
-            hero.style.transform = `translateY(${scrolled * 0.5}px)`;                        counter.style.transform = 'scale(1)';
-
-        }
-
-    }// Update active nav link
-
-    
-
-    // Combined scroll handlerfunction updateActiveNavLink() {                        counter.style.textShadow = '0 2px 10px rgba(212, 175, 55, 0.5)';    console.log(`Found ${counters.length} counters to animate`);
-
-    let rafId;
-
-    window.addEventListener('scroll', () => {    const sections = document.querySelectorAll('section[id]');
-
-        if (rafId) {
-
-            cancelAnimationFrame(rafId);    const navLinks = document.querySelectorAll('.nav-link');                    }, 300);
-
-        }
-
-        rafId = requestAnimationFrame(() => {    
-
-            updateScrollProgress();
-
-            updateParallax();    let current = '';                            initializeIntersectionObserver();
-
-        });
-
-    });    const scrollPos = window.scrollY + 100;
-
-    
-
-    console.log('✅ Scroll effects setup complete');                        console.log(`✅ Counter ${index + 1} animation complete!`);
-
-}
-
-    sections.forEach(section => {
-
-// ====================================
-
-// INTERSECTION OBSERVERS        const sectionTop = section.offsetTop;                }    if (counters.length === 0) {
-
-// ====================================
-
-        const sectionHeight = section.clientHeight;
-
-function setupObservers() {
-
-    console.log('👁️ Setting up Intersection Observers...');                    };
-
-    
-
-    // Observer for animations        if (scrollPos >= sectionTop && scrollPos <= sectionTop + sectionHeight) {
-
-    const animationObserver = new IntersectionObserver((entries) => {
-
-        entries.forEach(entry => {            current = section.getAttribute('id');                    console.warn('⚠️ No counters found! Check your HTML structure.');    initializeFormValidation();});
-
-            if (entry.isIntersecting) {
-
-                entry.target.classList.add('in-view');        }
-
-                
-
-                // Special handling for stats section    });            requestAnimationFrame(updateCounter);
-
-                if (entry.target.classList.contains('hero-stats')) {
-
-                    const counters = entry.target.querySelectorAll('.stat-number');    
-
-                    const hasUntriggered = Array.from(counters).some(c => !c.hasBeenAnimated);
-
-                        navLinks.forEach(link => {        };        return;
-
-                    if (hasUntriggered) {
-
-                        console.log('🎯 Stats section in view - triggering counters');        link.classList.remove('active');
-
-                        setTimeout(triggerAllCounters, 500);
-
-                    }        if (link.getAttribute('href') === `#${current}`) {        
-
-                }
-
-                            link.classList.add('active');
-
-                // Animate service cards
-
-                if (entry.target.classList.contains('services-grid')) {        }        counter.animateCounter = animateCounter;    }    initializeModals();
-
-                    const cards = entry.target.querySelectorAll('.service-card');
-
-                    cards.forEach((card, index) => {    });
-
-                        setTimeout(() => {
-
-                            card.style.opacity = '1';}    });
-
-                            card.style.transform = 'translateY(0)';
-
-                        }, index * 150);
-
-                    });
-
-                }// Mobile menu}    
-
-                
-
-                // Animate testimonial cardsfunction initializeMobileMenu() {
-
-                if (entry.target.classList.contains('testimonials-grid')) {
-
-                    const testimonials = entry.target.querySelectorAll('.testimonial-card');    const hamburger = document.getElementById('hamburger');
-
-                    testimonials.forEach((testimonial, index) => {
-
-                        setTimeout(() => {    const mobileMenu = document.getElementById('mobile-menu');
-
-                            testimonial.style.opacity = '1';
-
-                            testimonial.style.transform = 'translateY(0) scale(1)';    // Start all counter animations with stagger    counters.forEach((counter, index) => {    initializeSmoothScrolling();let currentSection = 'home';});
-
-                        }, index * 200);
-
-                    });    if (!hamburger || !mobileMenu) return;
-
-                }
-
-            }    function startAllCounterAnimations() {
-
-        });
-
-    }, {    hamburger.addEventListener('click', function() {
-
-        threshold: 0.2,
-
-        rootMargin: '0px 0px -100px 0px'        hamburger.classList.toggle('active');    console.log('🎬 Starting ALL counter animations...');        const dataCount = counter.getAttribute('data-count');
-
-    });
-
-            mobileMenu.classList.toggle('active');
-
-    // Observe key elements
-
-    const elementsToObserve = [        document.body.classList.toggle('menu-open');    
-
-        '.hero-stats',
-
-        '.services-grid',    });
-
-        '.testimonials-grid',
-
-        '.about-content',        const counters = document.querySelectorAll('.stat-number');        const target = parseInt(dataCount);    initializeServiceCards();
-
-        '.contact-content'
-
-    ];    // Close on link click
-
-    
-
-    elementsToObserve.forEach(selector => {    const mobileLinks = document.querySelectorAll('.mobile-nav-link');    counters.forEach((counter, index) => {
-
-        const element = document.querySelector(selector);
-
-        if (element) {    mobileLinks.forEach(link => {
-
-            animationObserver.observe(element);
-
-        }        link.addEventListener('click', function() {        if (counter.animateCounter) {        
-
-    });
-
-                hamburger.classList.remove('active');
-
-    console.log('✅ Intersection observers setup complete');
-
-}            mobileMenu.classList.remove('active');            setTimeout(() => {
-
-
-
-// ====================================            document.body.classList.remove('menu-open');
-
-// SMOOTH SCROLLING
-
-// ====================================        });                counter.animateCounter();        console.log(`Counter ${index + 1}: data-count="${dataCount}", parsed target=${target}`);    // ============================
-
-
-
-function setupSmoothScrolling() {    });
-
-    console.log('🏄 Setting up Smooth Scrolling...');
-
-                    }, index * 300);
-
-    // Handle all anchor links
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {    console.log('✅ Mobile menu initialized');
-
-        anchor.addEventListener('click', function(e) {
-
-            e.preventDefault();}        }        
-
-            const target = document.querySelector(this.getAttribute('href'));
-
-            if (target) {
-
-                smoothScrollTo(target);
-
-            }// Scroll effects    });
-
-        });
-
-    });function initializeScrollEffects() {
-
-    
-
-    console.log('✅ Smooth scrolling setup complete');    window.addEventListener('scroll', throttle(() => {}        if (isNaN(target) || target <= 0) {    // Mark as loaded
-
-}
-
-        updateScrollProgress();
-
-// Smooth scroll utility function
-
-function smoothScrollTo(target, duration = 1200, offset = 100) {        
-
-    const targetPosition = target.offsetTop - offset;
-
-    const startPosition = window.pageYOffset;        // Parallax for hero
-
-    const distance = targetPosition - startPosition;
-
-    let startTime = null;        const heroBackground = document.querySelector('.hero-background');// Hero animations sequence            console.warn(`⚠️ Invalid target for counter ${index + 1}: ${target}`);
-
-    
-
-    function easeInOutQuart(t) {        if (heroBackground && window.scrollY < window.innerHeight) {
-
-        return t < 0.5 ? 8 * t * t * t * t : 1 - 8 * (--t) * t * t * t;
-
-    }            heroBackground.style.transform = `translateY(${window.scrollY * 0.3}px)`;function initializeHeroAnimations() {
-
-    
-
-    function animation(currentTime) {        }
-
-        if (startTime === null) startTime = currentTime;
-
-        const timeElapsed = currentTime - startTime;    }, 10));    console.log('🎭 Initializing Hero Animations...');            return;    setTimeout(() => {// MAIN INITIALIZATIONlet scrollPosition = 0;
-
-        const progress = Math.min(timeElapsed / duration, 1);
-
-            
-
-        const easeProgress = easeInOutQuart(progress);
-
-        const run = startPosition + (distance * easeProgress);    console.log('✅ Scroll effects initialized');    
-
-        
-
-        window.scrollTo(0, run);}
-
-        
-
-        if (timeElapsed < duration) {    const heroElements = [        }
-
-            requestAnimationFrame(animation);
-
-        }// Scroll progress bar
-
-    }
-
-    function updateScrollProgress() {        '.hero-title',
-
-    requestAnimationFrame(animation);
-
-}    const progress = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-
-
-
-// ====================================            '.hero-description',                 document.body.classList.add('loaded');
-
-// SERVICE CARDS
-
-// ====================================    let progressBar = document.querySelector('.scroll-progress');
-
-
-
-function setupServiceCards() {    if (!progressBar) {        '.hero-buttons',
-
-    console.log('🛠️ Setting up Service Cards...');
-
-            progressBar = document.createElement('div');
-
-    const serviceCards = document.querySelectorAll('.service-card');
-
-            progressBar.className = 'scroll-progress';        '.hero-stats'        // Set initial state
-
-    // Add initial styles for animation
-
-    const cardStyles = document.createElement('style');        progressBar.style.cssText = `
-
-    cardStyles.textContent = `
-
-        .service-card,            position: fixed;    ];
-
-        .testimonial-card {
-
-            opacity: 0;            top: 0;
-
-            transform: translateY(40px);
-
-            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);            left: 0;            counter.textContent = '0';        console.log('✨ Website fully loaded and animated!');// ============================
-
-        }
-
-                    width: 0%;
-
-        .service-card.in-view,
-
-        .testimonial-card.in-view {            height: 4px;    heroElements.forEach((selector, index) => {
-
-            opacity: 1;
-
-            transform: translateY(0);            background: linear-gradient(90deg, #D4AF37, #FFD700);
-
-        }
-
-    `;            z-index: 9999;        const element = document.querySelector(selector);        counter.style.color = '#D4AF37';
-
-    document.head.appendChild(cardStyles);
-
-                transition: width 0.3s ease;
-
-    serviceCards.forEach(card => {
-
-        // Hover effects        `;        if (element) {
-
-        card.addEventListener('mouseenter', function() {
-
-            this.style.transform = 'translateY(-15px) scale(1.03)';        document.body.appendChild(progressBar);
-
-            this.style.boxShadow = '0 30px 60px rgba(212, 175, 55, 0.4)';
-
-            this.style.zIndex = '10';    }            setTimeout(() => {        counter.hasAnimated = false;    }, 500);
-
-        });
-
-            
-
-        card.addEventListener('mouseleave', function() {
-
-            this.style.transform = '';    progressBar.style.width = `${Math.min(progress, 100)}%`;                element.style.opacity = '1';
-
-            this.style.boxShadow = '';
-
-            this.style.zIndex = '';}
-
-        });
-
-                        element.style.transform = 'translateY(0)';        
-
-        // Click ripple effect
-
-        card.addEventListener('click', function(e) {// Intersection Observer for animations
-
-            createRippleEffect(this, e);
-
-        });function initializeIntersectionObserver() {                
-
-    });
-
-        const observer = new IntersectionObserver((entries) => {
-
-    console.log('✅ Service cards setup complete');
-
-}        entries.forEach(entry => {                // Start counters when stats are visible        // Create the animation function}function initializeWebsite() {let isScrolling = false;// ===== ENTERPRISE WEBSITE INITIALIZATION =====
-
-
-
-// Ripple effect utility            if (entry.isIntersecting) {
-
-function createRippleEffect(element, event) {
-
-    const ripple = document.createElement('div');                entry.target.classList.add('animate-on-scroll');                if (selector === '.hero-stats') {
-
-    const rect = element.getBoundingClientRect();
-
-    const size = 60;                
-
-    const x = event.clientX - rect.left - size / 2;
-
-    const y = event.clientY - rect.top - size / 2;                // Re-animate counters if scrolled back into view                    setTimeout(() => {        const animateCounter = () => {
-
-    
-
-    ripple.style.cssText = `                if (entry.target.classList.contains('hero-stats')) {
-
-        position: absolute;
-
-        width: ${size}px;                    const counters = entry.target.querySelectorAll('.stat-number');                        startAllCounterAnimations();
-
-        height: ${size}px;
-
-        border-radius: 50%;                    const hasUnanimated = Array.from(counters).some(c => !c.hasAnimated);
-
-        background: rgba(255, 215, 0, 0.6);
-
-        transform: scale(0);                                        }, 500);            if (counter.hasAnimated) {
-
-        animation: ripple-expand 0.6s ease-out;
-
-        left: ${x}px;                    if (hasUnanimated) {
-
-        top: ${y}px;
-
-        pointer-events: none;                        setTimeout(() => {                }
-
-        z-index: 100;
-
-    `;                            startAllCounterAnimations();
-
-    
-
-    // Add ripple animation                        }, 300);            }, 300 + (index * 300));                console.log(`Counter ${index + 1} already animated, skipping...`);
-
-    if (!document.querySelector('#ripple-styles')) {
-
-        const rippleStyles = document.createElement('style');                    }
-
-        rippleStyles.id = 'ripple-styles';
-
-        rippleStyles.textContent = `                }        }
-
-            @keyframes ripple-expand {
-
-                to {            }
-
-                    transform: scale(4);
-
-                    opacity: 0;        });    });                return;// ============================    // Initialize all components
-
-                }
-
-            }    }, {
-
-        `;
-
-        document.head.appendChild(rippleStyles);        threshold: 0.1,}
-
-    }
-
-            rootMargin: '0px 0px -50px 0px'
-
-    element.style.position = 'relative';
-
-    element.appendChild(ripple);    });            }
-
-    
-
-    setTimeout(() => ripple.remove(), 600);    
-
-}
-
-    const elementsToObserve = document.querySelectorAll('.hero-stats, .services-grid, .testimonials-grid');// Navigation system
-
-// ====================================
-
-// FORMS & MODALS    elementsToObserve.forEach(el => observer.observe(el));
-
-// ====================================
-
-    function initializeNavigation() {            // NAVIGATION SYSTEM
-
-function setupForms() {
-
-    console.log('📝 Setting up Forms...');    console.log('✅ Intersection observer initialized');
-
-    
-
-    const contactForm = document.getElementById('contactForm');}    const navbar = document.getElementById('navbar');
-
-    
-
-    if (contactForm) {
-
-        contactForm.addEventListener('submit', function(e) {
-
-            e.preventDefault();// Smooth scrolling    const navLinks = document.querySelectorAll('.nav-link');            console.log(`🚀 Starting animation for counter ${index + 1} to ${target}`);
-
-            showNotification('Thank you! Your message has been received. We\'ll contact you soon!', 'success');
-
-            this.reset();function initializeSmoothScrolling() {
-
-        });
-
-    }    document.querySelectorAll('a[href^="#"]').forEach(anchor => {    
-
-    
-
-    console.log('✅ Forms setup complete');        anchor.addEventListener('click', function (e) {
-
-}
-
-            e.preventDefault();    if (!navbar) return;            counter.hasAnimated = true;// ============================    initializeNavigation();function initializeWebsite() {
-
-function setupModals() {
-
-    console.log('🪟 Setting up Modals...');            const target = document.querySelector(this.getAttribute('href'));
-
-    
-
-    // Close modals on outside click            if (target) {    
-
-    window.addEventListener('click', function(e) {
-
-        if (e.target.classList.contains('modal')) {                smoothScrollToElement(target);
-
-            closeModal(e.target);
-
-        }            }    // Scroll effect            
-
-    });
-
-            });
-
-    console.log('✅ Modals setup complete');
-
-}    });    window.addEventListener('scroll', throttle(() => {
-
-
-
-// ====================================    
-
-// NOTIFICATION SYSTEM
-
-// ====================================    console.log('✅ Smooth scrolling initialized');        if (window.scrollY > 50) {            let currentValue = 0;function initializeNavigation() {
-
-
-
-function showNotification(message, type = 'info', duration = 5000) {}
-
-    const notification = document.createElement('div');
-
-    notification.className = 'elite-notification';            navbar.classList.add('scrolled');
-
-    
-
-    const colors = {// Smooth scroll function
-
-        success: 'linear-gradient(135deg, #10b981, #059669)',
-
-        error: 'linear-gradient(135deg, #ef4444, #dc2626)',function smoothScrollToElement(target, duration = 1000, offset = 90) {        } else {            const duration = 2000; // 2 seconds
-
-        warning: 'linear-gradient(135deg, #f59e0b, #d97706)',
-
-        info: 'linear-gradient(135deg, #3b82f6, #2563eb)'    const targetPosition = target.offsetTop - offset;
-
-    };
-
-        const startPosition = window.pageYOffset;            navbar.classList.remove('scrolled');
-
-    notification.style.cssText = `
-
-        position: fixed;    const distance = targetPosition - startPosition;
-
-        top: 20px;
-
-        right: 20px;    let startTime = null;        }            const startTime = performance.now();    const navbar = document.getElementById('navbar');    initializeMobileMenu();
-
-        padding: 1rem 2rem;
-
-        border-radius: 15px;    
-
-        color: white;
-
-        font-weight: 600;    function animation(currentTime) {        updateActiveNavLink();
-
-        font-size: 0.95rem;
-
-        z-index: 20000;        if (startTime === null) startTime = currentTime;
-
-        transform: translateX(120%);
-
-        transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);        const timeElapsed = currentTime - startTime;    }, 10));            
-
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-
-        backdrop-filter: blur(15px);        const run = easeInOutCubic(timeElapsed, startPosition, distance, duration);
-
-        max-width: 400px;
-
-        background: ${colors[type] || colors.info};        window.scrollTo(0, run);    
-
-        border: 1px solid rgba(255, 255, 255, 0.1);
-
-    `;        if (timeElapsed < duration) requestAnimationFrame(animation);
-
-    
-
-    notification.textContent = message;    }    // Click handlers            // Add glow effect during animation    const navLinks = document.querySelectorAll('.nav-link');
-
-    document.body.appendChild(notification);
-
-        
-
-    // Animate in
-
-    setTimeout(() => {    function easeInOutCubic(t, b, c, d) {    navLinks.forEach(link => {
-
-        notification.style.transform = 'translateX(0)';
-
-    }, 100);        t /= d / 2;
-
-    
-
-    // Animate out        if (t < 1) return c / 2 * t * t * t + b;        link.addEventListener('click', function(e) {            counter.style.textShadow = '0 0 20px #D4AF37';
-
-    setTimeout(() => {
-
-        notification.style.transform = 'translateX(120%)';        t -= 2;
-
-        setTimeout(() => {
-
-            if (notification.parentNode) {        return c / 2 * (t * t * t + 2) + b;            e.preventDefault();
-
-                notification.remove();
-
-            }    }
-
-        }, 500);
-
-    }, duration);                navLinks.forEach(l => l.classList.remove('active'));            counter.style.transition = 'all 0.3s ease';        initializeHeroAnimations();// DOM Content Loaded - Initialize Everything    // Instant load - no loading screen delay
-
-}
-
-    requestAnimationFrame(animation);
-
-// ====================================
-
-// MODAL FUNCTIONS}            this.classList.add('active');
-
-// ====================================
-
-
-
-function openBookingModal() {
-
-    const modal = document.getElementById('bookingModal');// Service cards                        
-
-    if (modal) {
-
-        modal.style.display = 'flex';function initializeServiceCards() {
-
-        document.body.style.overflow = 'hidden';
-
-        setTimeout(() => {    const serviceCards = document.querySelectorAll('.service-card');            const targetId = this.getAttribute('href');
-
-            modal.style.opacity = '1';
-
-        }, 10);    
-
-    }
-
-}    serviceCards.forEach(card => {            const targetElement = document.querySelector(targetId);            const updateCounter = (timestamp) => {    if (!navbar) return;
-
-
-
-function closeBookingModal() {        card.addEventListener('mouseenter', function() {
-
-    const modal = document.getElementById('bookingModal');
-
-    closeModal(modal);            this.style.transform = 'translateY(-10px) scale(1.02)';            if (targetElement) {
-
-}
-
-            this.style.boxShadow = '0 25px 50px rgba(212, 175, 55, 0.3)';
-
-function closeModal(modal) {
-
-    if (modal) {        });                smoothScrollToElement(targetElement);                const elapsed = timestamp - startTime;
-
-        modal.style.opacity = '0';
-
-        setTimeout(() => {        
-
-            modal.style.display = 'none';
-
-            document.body.style.overflow = '';        card.addEventListener('mouseleave', function() {            }
-
-        }, 300);
-
-    }            this.style.transform = '';
-
-}
-
-            this.style.boxShadow = '';        });                const progress = Math.min(elapsed / duration, 1);        initializeScrollEffects();
-
-function openServiceModal(serviceType) {
-
-    showNotification(        });
-
-        `Interested in our ${serviceType} services? Call us at (646) 989-0274 for a free quote!`, 
-
-        'info',     });    });
-
-        7000
-
-    );    
-
-}
-
-    console.log('✅ Service cards initialized');                    
-
-// ====================================
-
-// UTILITY FUNCTIONS}
-
-// ====================================
-
-    console.log('✅ Navigation initialized');
-
-function scrollToSection(sectionId) {
-
-    const element = document.getElementById(sectionId);// Form validation
-
-    if (element) {
-
-        smoothScrollTo(element);function initializeFormValidation() {}                // Smooth easing function    // Navbar scroll effect
-
-    }
-
-}    const contactForm = document.getElementById('contactForm');
-
-
-
-// Debounce utility    
-
-function debounce(func, wait) {
-
-    let timeout;    if (contactForm) {
-
-    return function executedFunction(...args) {
-
-        const later = () => {        contactForm.addEventListener('submit', function(e) {// Update active nav link                const easeOut = 1 - Math.pow(1 - progress, 3);
-
-            clearTimeout(timeout);
-
-            func(...args);            e.preventDefault();
-
-        };
-
-        clearTimeout(timeout);            showNotification('Thank you! Your message has been received.', 'success');function updateActiveNavLink() {
-
-        timeout = setTimeout(later, wait);
-
-    };        });
-
-}
-
-    }    const sections = document.querySelectorAll('section[id]');                currentValue = Math.floor(easeOut * target);    window.addEventListener('scroll', throttle(() => {    initializeCounterAnimations();document.addEventListener('DOMContentLoaded', function() {    isLoading = false;
-
-// ====================================
-
-// GLOBAL EXPORTS    
-
-// ====================================
-
-    console.log('✅ Form validation initialized');    const navLinks = document.querySelectorAll('.nav-link');
-
-// Export functions for global access
-
-window.openBookingModal = openBookingModal;}
-
-window.closeBookingModal = closeBookingModal;
-
-window.openServiceModal = openServiceModal;                    
-
-window.scrollToSection = scrollToSection;
-
-window.triggerAllCounters = triggerAllCounters;// Notification system
-
-window.showNotification = showNotification;
-
-function showNotification(message, type = 'info') {    let current = '';
-
-// ====================================
-
-// FINAL INITIALIZATION    const notification = document.createElement('div');
-
-// ====================================
-
-    notification.style.cssText = `    const scrollPos = window.scrollY + 100;                // Update the display        const scrollY = window.scrollY;
-
-console.log('✅ Elite Auto Repair JavaScript FULLY LOADED AND READY!');
-
-console.log('🎯 Counter animations ready to ROCK!');        position: fixed;
-
-console.log('🚀 $10,000 website experience activated!');
-        top: 20px;    
-
-        right: 20px;
-
-        padding: 1rem 1.5rem;    sections.forEach(section => {                counter.textContent = currentValue.toString();
-
-        border-radius: 12px;
-
-        color: white;        const sectionTop = section.offsetTop;
-
-        font-weight: 600;
-
-        z-index: 10000;        const sectionHeight = section.clientHeight;                            initializeIntersectionObserver();
-
-        transform: translateX(400px);
-
-        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);        
-
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-
-        backdrop-filter: blur(10px);        if (scrollPos >= sectionTop && scrollPos <= sectionTop + sectionHeight) {                // Color transitions during animation
-
-        max-width: 350px;
-
-    `;            current = section.getAttribute('id');
-
-    
-
-    switch (type) {        }                if (progress < 0.3) {        if (scrollY > 50) {
-
-        case 'success':
-
-            notification.style.background = 'linear-gradient(135deg, #10b981, #059669)';    });
-
-            break;
-
-        case 'error':                        counter.style.color = '#FFD700'; // Bright gold
-
-            notification.style.background = 'linear-gradient(135deg, #ef4444, #dc2626)';
-
-            break;    navLinks.forEach(link => {
-
-        default:
-
-            notification.style.background = 'linear-gradient(135deg, #3b82f6, #2563eb)';        link.classList.remove('active');                } else if (progress < 0.7) {            navbar.classList.add('scrolled');    initializeFormValidation();    initializeWebsite();    
-
-    }
-
-            if (link.getAttribute('href') === `#${current}`) {
-
-    notification.textContent = message;
-
-    document.body.appendChild(notification);            link.classList.add('active');                    counter.style.color = '#FFFFFF'; // White
-
-    
-
-    setTimeout(() => {        }
-
-        notification.style.transform = 'translateX(0)';
-
-    }, 10);    });                } else {        } else {
-
-    
-
-    setTimeout(() => {}
-
-        notification.style.transform = 'translateX(400px)';
-
-        setTimeout(() => {                    counter.style.color = '#D4AF37'; // Final gold
-
-            notification.remove();
-
-        }, 400);// Mobile menu
-
-    }, 5000);
-
-}function initializeMobileMenu() {                }            navbar.classList.remove('scrolled');    initializeModals();
-
-
-
-// Utility functions    const hamburger = document.getElementById('hamburger');
-
-function throttle(func, limit) {
-
-    let inThrottle;    const mobileMenu = document.getElementById('mobile-menu');                
-
-    return function() {
-
-        const args = arguments;    
-
-        const context = this;
-
-        if (!inThrottle) {    if (!hamburger || !mobileMenu) return;                if (progress < 1) {        }
-
-            func.apply(context, args);
-
-            inThrottle = true;    
-
-            setTimeout(() => inThrottle = false, limit);
-
-        }    hamburger.addEventListener('click', function() {                    requestAnimationFrame(updateCounter);
-
-    }
-
-}        hamburger.classList.toggle('active');
-
-
-
-// Modal functions        mobileMenu.classList.toggle('active');                } else {            initializeSmoothScrolling();});    // Initialize all enterprise components
-
-function openBookingModal() {
-
-    const modal = document.getElementById('bookingModal');        document.body.classList.toggle('menu-open');
-
-    if (modal) {
-
-        modal.style.display = 'block';    });                    // Animation complete!
-
-        document.body.style.overflow = 'hidden';
-
-    }    
-
-}
-
-    // Close on link click                    counter.textContent = target.toString();        updateActiveNavLink();
-
-function closeBookingModal() {
-
-    const modal = document.getElementById('bookingModal');    const mobileLinks = document.querySelectorAll('.mobile-nav-link');
-
-    if (modal) {
-
-        modal.style.display = 'none';    mobileLinks.forEach(link => {                    counter.style.color = '#D4AF37';
-
-        document.body.style.overflow = '';
-
-    }        link.addEventListener('click', function() {
-
-}
-
-            hamburger.classList.remove('active');                        }, 10));    initializeServiceCards();
-
-function openServiceModal(serviceType) {
-
-    showNotification(`Learn more about our ${serviceType} services! Call us at (646) 989-0274`, 'info');            mobileMenu.classList.remove('active');
-
-}
-
-            document.body.classList.remove('menu-open');                    // Epic finale effect
-
-function scrollToSection(sectionId) {
-
-    const element = document.getElementById(sectionId);        });
-
-    if (element) {
-
-        smoothScrollToElement(element);    });                    counter.style.transform = 'scale(1.2)';    
-
-    }
 
 }    
 
 
 
-// Export functions for global use    console.log('✅ Mobile menu initialized');                    counter.style.textShadow = '0 0 30px #FFD700';
+// Start all counter animations with stagger    counters.forEach((counter, index) => {    initializeSmoothScrolling();let currentSection = 'home';});
 
-window.openBookingModal = openBookingModal;
+function startAllCounterAnimations() {
 
-window.closeBookingModal = closeBookingModal;}
+    console.log('🎬 Starting ALL counter animations...');        const dataCount = counter.getAttribute('data-count');
 
-window.openServiceModal = openServiceModal;
+    
 
-window.scrollToSection = scrollToSection;                        // Navigation click handlers        initializeNavigation();
+    const counters = document.querySelectorAll('.stat-number');        const target = parseInt(dataCount);    initializeServiceCards();
 
-window.startAllCounterAnimations = startAllCounterAnimations;
+    counters.forEach((counter, index) => {
+
+        if (counter.animateCounter) {        
+
+            setTimeout(() => {
+
+                counter.animateCounter();        console.log(`Counter ${index + 1}: data-count="${dataCount}", parsed target=${target}`);    // ============================
+
+            }, index * 300);
+
+        }        
+
+    });
+
+}        if (isNaN(target) || target <= 0) {    // Mark as loaded
+
+
+
+// Hero animations sequence            console.warn(`⚠️ Invalid target for counter ${index + 1}: ${target}`);
+
+function initializeHeroAnimations() {
+
+    console.log('🎭 Initializing Hero Animations...');            return;    setTimeout(() => {// MAIN INITIALIZATIONlet scrollPosition = 0;
+
+    
+
+    const heroElements = [        }
+
+        '.hero-title',
+
+        '.hero-description',                 document.body.classList.add('loaded');
+
+        '.hero-buttons',
+
+        '.hero-stats'        // Set initial state
+
+    ];
+
+            counter.textContent = '0';        console.log('✨ Website fully loaded and animated!');// ============================
+
+    heroElements.forEach((selector, index) => {
+
+        const element = document.querySelector(selector);        counter.style.color = '#D4AF37';
+
+        if (element) {
+
+            setTimeout(() => {        counter.hasAnimated = false;    }, 500);
+
+                element.style.opacity = '1';
+
+                element.style.transform = 'translateY(0)';        
+
+                
+
+                // Start counters when stats are visible        // Create the animation function}function initializeWebsite() {let isScrolling = false;// ===== ENTERPRISE WEBSITE INITIALIZATION =====
+
+                if (selector === '.hero-stats') {
+
+                    setTimeout(() => {        const animateCounter = () => {
+
+                        startAllCounterAnimations();
+
+                    }, 500);            if (counter.hasAnimated) {
+
+                }
+
+            }, 300 + (index * 300));                console.log(`Counter ${index + 1} already animated, skipping...`);
+
+        }
+
+    });                return;// ============================    // Initialize all components
+
+}
+
+            }
+
+// Navigation system
+
+function initializeNavigation() {            // NAVIGATION SYSTEM
+
+    const navbar = document.getElementById('navbar');
+
+    const navLinks = document.querySelectorAll('.nav-link');            console.log(`🚀 Starting animation for counter ${index + 1} to ${target}`);
+
+    
+
+    if (!navbar) return;            counter.hasAnimated = true;// ============================    initializeNavigation();function initializeWebsite() {
+
+    
+
+    // Scroll effect            
+
+    window.addEventListener('scroll', throttle(() => {
+
+        if (window.scrollY > 50) {            let currentValue = 0;function initializeNavigation() {
+
+            navbar.classList.add('scrolled');
+
+        } else {            const duration = 2000; // 2 seconds
+
+            navbar.classList.remove('scrolled');
+
+        }            const startTime = performance.now();    const navbar = document.getElementById('navbar');    initializeMobileMenu();
+
+        updateActiveNavLink();
+
+    }, 10));            
+
+    
+
+    // Click handlers            // Add glow effect during animation    const navLinks = document.querySelectorAll('.nav-link');
+
+    navLinks.forEach(link => {
+
+        link.addEventListener('click', function(e) {            counter.style.textShadow = '0 0 20px #D4AF37';
+
+            e.preventDefault();
+
+            navLinks.forEach(l => l.classList.remove('active'));            counter.style.transition = 'all 0.3s ease';        initializeHeroAnimations();// DOM Content Loaded - Initialize Everything    // Instant load - no loading screen delay
+
+            this.classList.add('active');
+
+                        
+
+            const targetId = this.getAttribute('href');
+
+            const targetElement = document.querySelector(targetId);            const updateCounter = (timestamp) => {    if (!navbar) return;
+
+            if (targetElement) {
+
+                smoothScrollToElement(targetElement);                const elapsed = timestamp - startTime;
+
+            }
+
+        });                const progress = Math.min(elapsed / duration, 1);        initializeScrollEffects();
+
+    });
+
+                    
+
+    console.log('✅ Navigation initialized');
+
+}                // Smooth easing function    // Navbar scroll effect
+
+
+
+// Update active nav link                const easeOut = 1 - Math.pow(1 - progress, 3);
+
+function updateActiveNavLink() {
+
+    const sections = document.querySelectorAll('section[id]');                currentValue = Math.floor(easeOut * target);    window.addEventListener('scroll', throttle(() => {    initializeCounterAnimations();document.addEventListener('DOMContentLoaded', function() {    isLoading = false;
+
+    const navLinks = document.querySelectorAll('.nav-link');
+
+                    
+
+    let current = '';
+
+    const scrollPos = window.scrollY + 100;                // Update the display        const scrollY = window.scrollY;
+
+    
+
+    sections.forEach(section => {                counter.textContent = currentValue.toString();
+
+        const sectionTop = section.offsetTop;
+
+        const sectionHeight = section.clientHeight;                            initializeIntersectionObserver();
+
+        
+
+        if (scrollPos >= sectionTop && scrollPos <= sectionTop + sectionHeight) {                // Color transitions during animation
+
+            current = section.getAttribute('id');
+
+        }                if (progress < 0.3) {        if (scrollY > 50) {
+
+    });
+
+                        counter.style.color = '#FFD700'; // Bright gold
+
+    navLinks.forEach(link => {
+
+        link.classList.remove('active');                } else if (progress < 0.7) {            navbar.classList.add('scrolled');    initializeFormValidation();    initializeWebsite();    
+
+        if (link.getAttribute('href') === `#${current}`) {
+
+            link.classList.add('active');                    counter.style.color = '#FFFFFF'; // White
+
+        }
+
+    });                } else {        } else {
+
+}
+
+                    counter.style.color = '#D4AF37'; // Final gold
+
+// Mobile menu
+
+function initializeMobileMenu() {                }            navbar.classList.remove('scrolled');    initializeModals();
+
+    const hamburger = document.getElementById('hamburger');
+
+    const mobileMenu = document.getElementById('mobile-menu');                
+
+    
+
+    if (!hamburger || !mobileMenu) return;                if (progress < 1) {        }
+
+    
+
+    hamburger.addEventListener('click', function() {                    requestAnimationFrame(updateCounter);
+
+        hamburger.classList.toggle('active');
+
+        mobileMenu.classList.toggle('active');                } else {            initializeSmoothScrolling();});    // Initialize all enterprise components
+
+        document.body.classList.toggle('menu-open');
+
+    });                    // Animation complete!
+
+    
+
+    // Close on link click                    counter.textContent = target.toString();        updateActiveNavLink();
+
+    const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+    mobileLinks.forEach(link => {                    counter.style.color = '#D4AF37';
+
+        link.addEventListener('click', function() {
+
+            hamburger.classList.remove('active');                        }, 10));    initializeServiceCards();
+
+            mobileMenu.classList.remove('active');
+
+            document.body.classList.remove('menu-open');                    // Epic finale effect
+
+        });
+
+    });                    counter.style.transform = 'scale(1.2)';    
+
+    
+
+    console.log('✅ Mobile menu initialized');                    counter.style.textShadow = '0 0 30px #FFD700';
+
+}
+
+                        // Navigation click handlers        initializeNavigation();
 
 // Scroll effects
 
-console.log('✅ Elite Auto Repair JavaScript Loaded Successfully!');
 function initializeScrollEffects() {                    setTimeout(() => {
 
     window.addEventListener('scroll', throttle(() => {

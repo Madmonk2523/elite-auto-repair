@@ -291,11 +291,15 @@ function setupSmoothScrolling() {
     });
 }
 
-function smoothScrollTo(target, duration = 1000, offset = 90) {
+function smoothScrollTo(target, duration = 350, offset = 90) {
     const start = window.pageYOffset;
     const end = target.offsetTop - offset;
     const distance = end - start;
     let startTime = null;
+    // Temporarily force instant scroll behavior to avoid CSS 'scroll-behavior: smooth' interfering
+    const root = document.documentElement;
+    const prevBehavior = root.style.scrollBehavior;
+    root.style.scrollBehavior = 'auto';
 
     const step = (timestamp) => {
         if (startTime === null) {
@@ -307,6 +311,9 @@ function smoothScrollTo(target, duration = 1000, offset = 90) {
         window.scrollTo(0, start + distance * eased);
         if (progress < 1) {
             requestAnimationFrame(step);
+        } else {
+            // Restore previous scroll-behavior after animation completes
+            root.style.scrollBehavior = prevBehavior || '';
         }
     };
 

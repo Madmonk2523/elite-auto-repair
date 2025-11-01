@@ -7,74 +7,101 @@
   <meta name="description" content="Elite Auto Repair - Melville's premier automotive service center. Expert brake repair, precision oil changes, and professional tire services. 20+ years of excellence.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Modern Navigation Bar -->
-  <nav class="navbar simple-navbar">
+  <!-- Premium Navigation Bar -->
+  <nav class="navbar" id="navbar">
     <div class="nav-container">
-      <div class="nav-logo">Elite Auto Repair</div>
+      <div class="nav-logo">
+        <i class="fas fa-wrench"></i>
+        <span>Elite Auto Repair</span>
+      </div>
       <div class="nav-links">
-        <a href="#hero" class="nav-btn">Home</a>
-        <a href="#about" class="nav-btn">About</a>
-        <a href="#services" class="nav-btn">Services</a>
-        <a href="#contact" class="nav-btn">Contact</a>
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#testimonials" class="nav-link">Reviews</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <button class="cta-button">
+          <i class="fas fa-phone"></i>
+          <span>Book Now</span>
+        </button>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-content">
+      <a href="#home" class="mobile-nav-link">Home</a>
+      <a href="#about" class="mobile-nav-link">About</a>
+      <a href="#services" class="mobile-nav-link">Services</a>
+      <a href="#testimonials" class="mobile-nav-link">Reviews</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+      <button class="mobile-cta-button">
+        <i class="fas fa-phone"></i>
+        Book Now
+      </button>
+    </div>
+  </div>
+
+  <!-- Premium Hero Section -->
   <section id="home" class="hero">
     <div class="hero-background">
       <div class="hero-overlay"></div>
+      <div class="hero-particles"></div>
     </div>
     <div class="hero-content">
-      <div class="hero-text">
-        <h1 class="hero-title">
-          <span class="title-small">Melville's Premier</span>
-          <span class="title-main">Automotive Excellence</span>
-          <span class="title-subtitle">Where Precision Meets Performance</span>
-        </h1>
-        <p class="hero-description">
-          Experience unparalleled automotive care with our certified technicians, 
-          state-of-the-art equipment, and 20+ years of unwavering commitment to excellence!
-        </p>
-        <div class="hero-buttons">
-          <button class="btn-primary" onclick="openBookingModal()">
-            <i class="fas fa-calendar-alt"></i>
-            Schedule Service
-          </button>
-          <button class="btn-secondary" onclick="scrollToSection('services')">
-            <i class="fas fa-tools"></i>
-            Our Services
-          </button>
+      <div class="hero-badge">
+        <i class="fas fa-award"></i>
+        <span>20+ Years of Excellence</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="title-small">Melville's Premier</span>
+        <span class="title-main">Elite Auto Repair</span>
+        <span class="title-subtitle">Where Precision Meets Performance</span>
+      </h1>
+      <p class="hero-description">
+        Experience unparalleled automotive care with ASE-certified technicians, 
+        cutting-edge diagnostic equipment, and a commitment to excellence that has served 
+        thousands of satisfied customers across Long Island.
+      </p>
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-number" data-count="5000">5000</div>
+          <div class="stat-label">Cars Serviced</div>
         </div>
-        <div class="hero-stats">
-          <div class="stat">
-            <span class="stat-number" data-suffix="+">5000</span>
-            <span class="stat-label">Satisfied Customers</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number" data-suffix="+">20</span>
-            <span class="stat-label">Years Experience</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number" data-suffix="%">98</span>
-            <span class="stat-label">Customer Satisfaction</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number" data-suffix="★">4.9</span>
-            <span class="stat-label">Average Rating</span>
-          </div>
+        <div class="stat">
+          <div class="stat-number" data-count="98">98</div>
+          <div class="stat-label">% Satisfaction</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number" data-count="20">20</div>
+          <div class="stat-label">Years Experience</div>
         </div>
       </div>
+      <div class="hero-buttons">
+        <button class="btn-primary" onclick="openBookingModal()">
+          <i class="fas fa-calendar-check"></i>
+          <span>Schedule Service</span>
+          <div class="button-glow"></div>
+        </button>
+        <button class="btn-secondary" onclick="scrollToSection('services')">
+          <i class="fas fa-wrench"></i>
+          <span>View Services</span>
+        </button>
+      </div>
     </div>
-    <div class="scroll-indicator">
-      <div class="scroll-arrow"></div>
-    </div>
+  </div>
   </section>
 
   <!-- Services Section -->

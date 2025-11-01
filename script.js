@@ -291,7 +291,7 @@ function setupSmoothScrolling() {
     });
 }
 
-function smoothScrollTo(target, duration = 350, offset = 90) {
+function smoothScrollTo(target, duration = 150, offset = 90) {
     const start = window.pageYOffset;
     const end = target.offsetTop - offset;
     const distance = end - start;

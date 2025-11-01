@@ -223,7 +223,7 @@ function setupScrollEffects() {
     const updateProgress = () => {
         const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
         const progress = scrollHeight === 0 ? 0 : (window.scrollY / scrollHeight) * 100;
-        bar.style.width = ${Math.min(progress, 100)}%;
+        bar.style.width = `${Math.min(progress, 100)}%`;
     };
 
     window.addEventListener('scroll', throttle(updateProgress, 30));
@@ -336,10 +336,10 @@ function createRipple(card, event) {
     const rect = card.getBoundingClientRect();
     const size = Math.max(rect.width, rect.height);
     ripple.style.position = 'absolute';
-    ripple.style.width = ${size}px;
-    ripple.style.height = ${size}px;
-    ripple.style.left = ${event.clientX - rect.left - size / 2}px;
-    ripple.style.top = ${event.clientY - rect.top - size / 2}px;
+    ripple.style.width = `${size}px`;
+    ripple.style.height = `${size}px`;
+    ripple.style.left = `${event.clientX - rect.left - size / 2}px`;
+    ripple.style.top = `${event.clientY - rect.top - size / 2}px`;
     ripple.style.borderRadius = '50%';
     ripple.style.pointerEvents = 'none';
     ripple.style.background = 'rgba(255, 215, 0, 0.45)';
@@ -413,7 +413,7 @@ function closeModal(modal) {
 }
 
 function openServiceModal(serviceName) {
-    showNotification(Interested in our  service? Call (646) 989-0274., 'info');
+    showNotification(`Interested in our ${serviceName} service? Call (646) 989-0274.`, 'info');
 }
 
 // ------------------------------------------------------------
@@ -432,7 +432,7 @@ function showNotification(message, type = 'info', duration = 5000) {
     note.className = 'elite-notification';
     note.textContent = message;
     note.style.cssText = 'position:fixed;top:24px;right:24px;padding:1rem 1.6rem;border-radius:16px;color:#fff;font-weight:600;z-index:10000;transform:translateX(140%);transition:transform 0.45s cubic-bezier(0.4,0,0.2,1);box-shadow:0 20px 40px rgba(15,23,42,0.45);backdrop-filter:blur(14px);';
-    note.style.background = linear-gradient(135deg, , #0f172a);
+    note.style.background = `linear-gradient(135deg, ${colors[type] || colors.info}, #0f172a)`;
     document.body.appendChild(note);
 
     setTimeout(() => note.style.transform = 'translateX(0)', 20);
